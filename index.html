@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Shubham Kumar Yadav — MBA Business Analytics student, aspiring business analyst, and front-end development intern." />
+  <title>Shubham Kumar Yadav | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1020;--panel:#111a30;--panel2:#151f38;--text:#edf2ff;--muted:#a8b4cc;--line:rgba(255,255,255,.11);--accent:#78a9ff;--mint:#75e0c0;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#1c3156 0,transparent 38%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.84);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font:800 18px Manrope,sans-serif;letter-spacing:-.5px}.brand span{color:var(--mint)}
+    .navlinks{display:flex;gap:24px;color:var(--muted);font-size:13px}.navlinks a:hover{color:var(--text)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px;border-radius:9px}
+    .hero{padding:92px 0 78px;display:grid;grid-template-columns:1.5fr .8fr;gap:56px;align-items:center}.eyebrow{color:var(--mint);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+    h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.15;letter-spacing:-1px}h1{font-size:clamp(42px,6vw,70px);margin:18px 0 20px}h1 em{font-style:normal;color:var(--accent)}.lead{font-size:18px;color:var(--muted);max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:700;font-size:14px;border:1px solid var(--line);transition:.2s}.primary{background:var(--accent);color:#071225;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}.secondary:hover{border-color:var(--accent)}
+    .profile-card{background:linear-gradient(145deg,rgba(120,169,255,.15),rgba(117,224,192,.07));border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 22px 80px #0005}.avatar{height:88px;width:88px;border-radius:24px;background:linear-gradient(135deg,var(--accent),var(--mint));display:grid;place-items:center;color:#091326;font:800 34px Manrope,sans-serif;margin-bottom:22px}
+    .profile-card h3{font-size:20px;margin:0 0 8px}.profile-card p{color:var(--muted);font-size:14px;margin:0}.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.quick div{padding:12px;background:#0b1326a8;border:1px solid var(--line);border-radius:12px}.quick strong{display:block;font:700 19px Manrope}.quick small{color:var(--muted);font-size:11px}
+    section{padding:62px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}h2{font-size:clamp(28px,4vw,38px);margin:8px 0 0}.section-note{color:var(--muted);font-size:13px;max-width:390px}
+    .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}.panel p{color:var(--muted);margin:0}.focus-list{display:grid;gap:12px}.focus-item{display:flex;gap:12px;align-items:flex-start;color:var(--muted);font-size:14px}.dot{width:8px;height:8px;background:var(--mint);border-radius:50%;margin-top:8px;flex:none}
+    .timeline{display:grid;gap:14px}.entry{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:22px 24px;background:var(--panel);border:1px solid var(--line);border-radius:16px}.entry time{font-size:12px;color:var(--mint);font-weight:700;letter-spacing:.5px}.entry h3{font-size:18px;margin:0 0 5px;letter-spacing:-.3px}.entry .sub{font-size:13px;color:var(--accent);margin-bottom:10px}.entry p{font-size:14px;color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:22px;min-height:190px}.card .tag{font-size:10px;color:var(--mint);text-transform:uppercase;letter-spacing:1.4px;font-weight:700}.card h3{font-size:18px;margin:12px 0 8px;letter-spacing:-.3px}.card p{font-size:13px;color:var(--muted);margin:0}.placeholder{border-style:dashed;background:rgba(17,26,48,.55)}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skillbox h3{font-size:16px;letter-spacing:0;margin:0 0 16px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{padding:7px 10px;border:1px solid var(--line);border-radius:8px;color:#c7d2e8;font-size:12px;background:#0b1326}
+    .cert{display:flex;align-items:center;justify-content:space-between;gap:16px}.cert strong{display:block}.cert small{color:var(--muted)}.cert a{font-size:12px;color:var(--accent)}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-links{display:grid;gap:12px}.contact-link{padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:14px}.contact-link b{color:var(--text);display:block;font-size:12px;margin-bottom:3px}
+    footer{padding:28px 0;color:var(--muted);font-size:12px;text-align:center;border-top:1px solid var(--line)}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:66px 0 54px;gap:30px}.profile-card{max-width:480px}.about-grid,.contact{grid-template-columns:1fr}.cards,.skills{grid-template-columns:repeat(2,1fr)}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;padding:18px 22px;background:#0b1020;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.cards,.skills{grid-template-columns:1fr}.entry{grid-template-columns:1fr;gap:8px}.section-head{display:block}.section-note{margin-top:12px}.hero{padding-top:52px}.lead{font-size:16px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#home">SHUBHAM<span>.</span></a>
+  <div class="navlinks" id="navlinks"><a href="#about">About</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  <button class="menu" id="menu" aria-label="Toggle navigation">Menu</button>
+</nav></div></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">MBA • Business Analytics • Technology</div>
+      <h1>Shubham Kumar<br><em>Yadav.</em></h1>
+      <p class="lead">I’m an MBA Business Analytics student with a foundation in Information Technology and hands-on front-end development experience. I’m interested in turning data and technology into clear business insights and practical solutions.</p>
+      <div class="actions"><a class="btn primary" href="#contact">Connect with me</a><a class="btn secondary" href="#projects">Explore my work</a></div>
+    </div>
+    <aside class="profile-card">
+      <div class="avatar">SY</div>
+      <h3>Business + Data + Technology</h3>
+      <p>Curious learner focused on analytics, business intelligence, AI, and building useful digital experiences.</p>
+      <div class="quick"><div><strong>MBA</strong><small>Business Analytics</small></div><div><strong>B.Tech</strong><small>Information Technology</small></div><div><strong>HTML/CSS/JS</strong><small>Front-end foundation</small></div><div><strong>InDice</strong><small>Internship experience</small></div></div>
+    </aside>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">A little about me</div><h2>Profile</h2></div><p class="section-note">A concise introduction for recruiters, placement teams, and collaborators.</p></div>
+    <div class="about-grid">
+      <div class="panel"><p>I am pursuing an MBA in Business Analytics at the Mittal School of Business, Lovely Professional University (LPU), building on my B.Tech in Information Technology from Oriental Institute of Science and Technology, Bhopal. My experience as a Front-End Developer Intern at InDice Private Limited introduced me to developing web interfaces and collaborating with a team. I’m now strengthening my analytical and business skills alongside my technology background.</p></div>
+      <div class="panel focus-list">
+        <div class="focus-item"><span class="dot"></span><span><b>Career interests</b><br>Business Analytics, Data Analytics, Business Intelligence, and AI-enabled business solutions.</span></div>
+        <div class="focus-item"><span class="dot"></span><span><b>Working style</b><br>Curious, collaborative, organised, and focused on continuous learning.</span></div>
+        <div class="focus-item"><span class="dot"></span><span><b>What I bring</b><br>A blend of IT fundamentals, front-end exposure, and business-analytics learning.</span></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Academic background</div><h2>Education</h2></div><p class="section-note">Add your exact study years and graduation details before publishing.</p></div>
+    <div class="timeline">
+      <article class="entry"><time>ONGOING</time><div><h3>Master of Business Administration (MBA)</h3><div class="sub">Business Analytics · Mittal School of Business, Lovely Professional University</div><p>Developing knowledge across business management, analytics, data-driven decision-making, business intelligence, and emerging technologies.</p></div></article>
+      <article class="entry"><time>COMPLETED</time><div><h3>Bachelor of Technology (B.Tech)</h3><div class="sub">Information Technology · Oriental Institute of Science and Technology, Bhopal</div><p>Built an academic foundation in information technology and computing.</p></div></article>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Practical exposure</div><h2>Experience</h2></div></div>
+    <div class="entry"><time>INTERNSHIP</time><div><h3>Front-End Developer Intern</h3><div class="sub">InDice Private Limited</div><p>Worked on building a website interface using HTML, CSS, and JavaScript. Took on team-lead responsibilities during the internship, supporting coordination and collaboration. Add the project name, internship dates, and specific features you personally delivered before publishing.</p></div></div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Selected work</div><h2>Projects</h2></div><p class="section-note">Only one project is currently confirmed from the information available. Replace the draft card with its actual name, screenshots, repository, and details.</p></div>
+    <div class="cards">
+      <article class="card"><div class="tag">Front-end development · Internship</div><h3>Website Interface Development</h3><p>Contributed to a website interface using HTML, CSS, and JavaScript during the Front-End Developer internship at InDice Private Limited. Add the website purpose, your exact contribution, key features, and GitHub/demo links.</p></article>
+      <article class="card placeholder"><div class="tag">Add your project</div><h3>Business Analytics Project</h3><p>Add a completed analytics project here: business question, dataset, tools used (for example Excel, SQL, Python, or Power BI), analysis, and measurable findings.</p></article>
+      <article class="card placeholder"><div class="tag">Add your project</div><h3>Data Visualisation / BI Project</h3><p>Add a dashboard or visualisation project with a screenshot, key KPIs, insights, and a link to the source files or published dashboard.</p></article>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Capabilities</div><h2>Skills</h2></div><p class="section-note">Keep skill levels honest and be ready to discuss a practical example for each skill in an interview.</p></div>
+    <div class="skills">
+      <div class="panel skillbox"><h3>Technical skills</h3><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Microsoft Excel</span><span class="chip">Power BI</span><span class="chip">Data Visualisation</span><span class="chip">Generative AI</span></div></div>
+      <div class="panel skillbox"><h3>Business & analytical</h3><div class="chips"><span class="chip">Business Analytics</span><span class="chip">Data Analysis</span><span class="chip">Business Intelligence</span><span class="chip">Problem Solving</span><span class="chip">Research</span><span class="chip">Data-driven Thinking</span></div></div>
+      <div class="panel skillbox"><h3>Professional skills</h3><div class="chips"><span class="chip">Communication</span><span class="chip">Presentation</span><span class="chip">Teamwork</span><span class="chip">Coordination</span><span class="chip">Leadership</span><span class="chip">Adaptability</span><span class="chip">Continuous Learning</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="certifications"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Learning & development</div><h2>Certifications</h2></div></div>
+    <div class="panel cert"><div><strong>CSS Essential Training</strong><small>LinkedIn Learning · Add completion date and certificate URL</small></div><a href="#" aria-label="Add certificate link">ADD LINK ↗</a></div>
+    <p style="color:var(--muted);font-size:12px;margin:12px 2px 0">Also add your “AI for Career Readiness” certificate and any other verified courses, with working credential links.</p>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Let’s connect</div><h2>Contact</h2></div><p class="section-note">Replace the placeholders below with your professional contact details and profile links.</p></div>
+    <div class="contact">
+      <div class="panel"><h3 style="margin-top:0">Open to opportunities</h3><p style="color:var(--muted);font-size:14px">I’m interested in opportunities where I can apply my technology background, business understanding, and analytical skills while continuing to learn and grow.</p></div>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:YOUR.EMAIL@example.com"><b>Email</b>YOUR.EMAIL@example.com · replace this</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noreferrer"><b>LinkedIn</b>Add your LinkedIn profile URL</a>
+        <a class="contact-link" href="https://github.com/YOUR-GITHUB" target="_blank" rel="noreferrer"><b>GitHub</b>Add your GitHub profile URL</a>
+        <div class="contact-link"><b>Location</b>India</div>
+      </div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Shubham Kumar Yadav · Built for learning, opportunity, and growth.</div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menu = document.getElementById('menu'), links = document.getElementById('navlinks');
+  menu.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>
